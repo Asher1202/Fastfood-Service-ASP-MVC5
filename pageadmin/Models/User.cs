@@ -35,13 +35,13 @@ namespace pageadmin.Models
         [Required(ErrorMessage ="Vui lòng nhập địa chỉ")]
         public string Address { get; set; }
         public string PostCode { get; set; }
-        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8.15}", ErrorMessage = "Mật khẩu cần ít nhất 1 chữ hoa, 1 chữ thường, 1 số ít nhất 8 kí tự và nhiều nhất 15 kí tự")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$", ErrorMessage = "Mật khẩu cần ít nhất 1 chữ hoa, 1 chữ thường, 1 số ít nhất 8 kí tự và nhiều nhất 15 kí tự")]
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
         public string ImageUrl { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
-    
+        public string LoginErrorMessage { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cart> Carts { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

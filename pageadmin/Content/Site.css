@@ -21,3 +21,40 @@ textarea {
 .field-validation-error {
     color: red;
 }
+body{
+    background-color:#f8f8f8;
+}
+tr {
+    font-family: fontawesome;
+    font-size:inherit;
+    padding-left:3px;
+}
+td{
+    padding-top:10px;
+}
+label{
+    padding-left:15px;
+}
+.dangnhap-panel {
+
+    position: fixed;
+    top: 50px;
+    left: 35%;
+    border-radius: 25px;
+    background: #ccb299;
+    padding: 20px;
+    width: 350px;
+
+}
+.dangnhap-heading, .dangnhap-title {
+    background-color: inherit;
+    position: fixed;
+    color:white;
+    top:30px;
+    left:42%;
+}
+#button-reg{
+    position:relative;
+    left:50%;
+
+}

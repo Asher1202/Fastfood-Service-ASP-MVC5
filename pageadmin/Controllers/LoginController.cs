@@ -10,14 +10,25 @@ namespace pageadmin.Controllers
     {
         FastfoodEntities3 _db = new FastfoodEntities3();
         // GET: Login
-        public ActionResult Index()
+        public ActionResult DangNhap()
         {
             return View();
         }
         [HttpPost]
         public ActionResult DangNhap(User _user)
         {
-            var check = _db.Users.Where(s => s.Email.Equals(_user.Email) || s.Username.Equals(_user.Username) && s.Password.Equals(_user.Password)).FirstOrDefault();
+            var check = _db.Users.Where(s => s.Email.Equals(_user.Email) && s.Password.Equals(_user.Password)).FirstOrDefault();
+            if(check == null)
+            {
+                _user.LoginErrorMessage = "Email hoặc username hoặc mật khẩu sai";
+                return View("DangNhap", _user);
+            }
+            else
+            {
+                Session["UserId"] = _user.UserId;
+                Session["Username"] = _user.Name;
+                return RedirectToAction("Index", "Home");
+            }
         }
         [HttpGet]
         public ActionResult DangKy() { 
@@ -34,7 +45,7 @@ namespace pageadmin.Controllers
                     _db.Configuration.ValidateOnSaveEnabled = false;
                     _db.Users.Add(_user);
                     _db.SaveChanges();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("thucDon","Home");
                 }
                 else
                 {

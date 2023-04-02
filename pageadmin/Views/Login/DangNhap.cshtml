@@ -44,57 +44,18 @@
     <div id="form-register">
         <div class="dangnhap-panel">
             <div class="dangnhap-heading">
-                <h3 class="dangnhap-title">Đăng Ký</h3>
+                <h3 class="dangnhap-title">Đăng Nhập</h3>
             </div>
-            @using (Html.BeginForm("DangKy", "Login", FormMethod.Post))
+            @using (Html.BeginForm("DangNhap", "Login", FormMethod.Post))
             {
-             @Html.AntiForgeryToken()
-                <table>
-
-                    <div class="form-group">
-                    <tr>
-                        <td>@Html.Label("Tên")</td>
-                        <td>@Html.TextBoxFor(m => m.Name)</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">@Html.ValidationMessageFor(m => m.Name)</td>
-                    </tr>
-                    
+                @Html.AntiForgeryToken()
+        <table>
             <tr>
                 <td>@Html.Label("Tên đăng nhập")</td>
-                <td>@Html.TextBoxFor(m => m.Username)</td>
-            </tr>
-            <tr>
-                <td colspan="2">@Html.ValidationMessageFor(m => m.Username)</td>
-            </tr>
-            <tr>
-                <td>@Html.Label("Số điện thoại")</td>
-                <td>@Html.TextBoxFor(m => m.Mobile)</td>
-            </tr>
-            <tr>
-                <td colspan="2">@Html.ValidationMessageFor(m => m.Mobile)</td>
-            </tr>
-            <tr>
-                <td>@Html.Label("Email")</td>
                 <td>@Html.TextBoxFor(m => m.Email)</td>
             </tr>
             <tr>
                 <td colspan="2">@Html.ValidationMessageFor(m => m.Email)</td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    @if (ViewBag.error != null)
-                    {
-                        <span class="field-validation-error">@ViewBag.error</span>
-                    }
-                </td>
-            </tr>
-            <tr>
-                <td>@Html.Label("Địa chỉ")</td>
-                <td>@Html.TextBoxFor(m => m.Address)</td>
-            </tr>
-            <tr>
-                <td colspan="2">@Html.ValidationMessageFor(m => m.Address)</td>
             </tr>
             <tr>
                 <td>@Html.Label("Mật khẩu")</td>
@@ -103,27 +64,33 @@
             <tr>
                 <td colspan="2">@Html.ValidationMessageFor(m => m.Password)</td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    <label class="field-validation-error">
+                        @Html.DisplayFor(m => m.LoginErrorMessage)
+                    </label>
+                </td>
+            </tr>
 
             <tr>
 
                 <td>
-                    <input class="btn btn-success btn-block" id="button-reg" type="submit" value="Đăng ký" />
-                   
+                    <input class="btn btn-success btn-block" id="button-reg" type="submit" value="Đăng Nhập" />
+
                 </td>
             </tr>
             <tr>
 
                 <td>
-                    <a class="btn btn-success btn-block" id="button-reg" href="@Url.Action("DangNhap", "Login")">Đăng nhập</a>
+                    <a class="btn btn-success btn-block" id="button-reg" href="@Url.Action("DangKy", "Login")">Đăng Ký</a>
                 </td>
             </tr>
+        </table>
 
-
-            </table>
         }
 
         </div>
-    </div>
-</body>
+        </div>
+    </body>
 
 </html>

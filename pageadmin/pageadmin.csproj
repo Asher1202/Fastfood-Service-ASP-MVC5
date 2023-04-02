@@ -309,15 +309,27 @@
     <Content Include="assests\css\style.css" />
     <Content Include="assests\favicon.ico" />
     <Content Include="assests\img\about-bg.jpg" />
+    <Content Include="assests\img\about-img.png" />
     <Content Include="assests\img\about.jpg" />
     <Content Include="assests\img\apple-touch-icon.png" />
     <Content Include="assests\img\chefs\chefs-1.jpg" />
     <Content Include="assests\img\chefs\chefs-2.jpg" />
     <Content Include="assests\img\chefs\chefs-3.jpg" />
+    <Content Include="assests\img\client1.jpg" />
+    <Content Include="assests\img\client2.jpg" />
     <Content Include="assests\img\event-birthday.jpg" />
     <Content Include="assests\img\event-custom.jpg" />
     <Content Include="assests\img\event-private.jpg" />
     <Content Include="assests\img\events-bg.jpg" />
+    <Content Include="assests\img\f1.png" />
+    <Content Include="assests\img\f2.png" />
+    <Content Include="assests\img\f3.png" />
+    <Content Include="assests\img\f4.png" />
+    <Content Include="assests\img\f5.png" />
+    <Content Include="assests\img\f6.png" />
+    <Content Include="assests\img\f7.png" />
+    <Content Include="assests\img\f8.png" />
+    <Content Include="assests\img\f9.png" />
     <Content Include="assests\img\favicon.png" />
     <Content Include="assests\img\gallery\gallery-1.jpg" />
     <Content Include="assests\img\gallery\gallery-2.jpg" />
@@ -353,6 +365,8 @@
     <Content Include="assests\img\menu\mozzarella.jpg" />
     <Content Include="assests\img\menu\spinach-salad.jpg" />
     <Content Include="assests\img\menu\tuscan-grilled.jpg" />
+    <Content Include="assests\img\o1.jpg" />
+    <Content Include="assests\img\o2.jpg" />
     <Content Include="assests\img\specials-1.png" />
     <Content Include="assests\img\specials-2.png" />
     <Content Include="assests\img\specials-3.png" />
@@ -588,6 +602,7 @@
     <Content Include="Views\Home\thucDon.cshtml" />
     <Content Include="Views\Login\DangKy.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Login\DangNhap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
