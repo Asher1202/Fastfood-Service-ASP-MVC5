@@ -1,0 +1,355 @@
+E:\thuc hanh\pageadmin\pageadmin\bin\pageadmin.dll.config
+E:\thuc hanh\pageadmin\pageadmin\bin\pageadmin.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\pageadmin.pdb
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\csc.exe
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\csc.exe.config
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\csc.rsp
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\csi.exe
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\csi.exe.config
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\csi.rsp
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.Managed.Core.targets
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.AppContext.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Collections.Immutable.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Console.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Globalization.Calendars.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.IO.Compression.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.IO.FileSystem.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Net.Http.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Net.Sockets.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Reflection.Metadata.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.ValueTuple.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Xml.XmlDocument.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Xml.XPath.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\vbc.exe
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\vbc.exe.config
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\vbc.rsp
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\VBCSCompiler.exe
+E:\thuc hanh\pageadmin\pageadmin\bin\roslyn\VBCSCompiler.exe.config
+E:\thuc hanh\pageadmin\pageadmin\bin\Antlr3.Runtime.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\Microsoft.Web.Infrastructure.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\Newtonsoft.Json.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Helpers.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Mvc.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Optimization.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Razor.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.WebPages.Deployment.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.WebPages.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.WebPages.Razor.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\WebGrease.dll
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Helpers.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Mvc.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Optimization.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.Razor.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.WebPages.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.WebPages.Deployment.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\System.Web.WebPages.Razor.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\Newtonsoft.Json.xml
+E:\thuc hanh\pageadmin\pageadmin\bin\Antlr3.Runtime.pdb
+E:\thuc hanh\pageadmin\pageadmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\thuc hanh\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.AssemblyReference.cache
+E:\thuc hanh\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.CoreCompileInputs.cache
+E:\thuc hanh\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.CopyComplete
+E:\thuc hanh\pageadmin\pageadmin\obj\Debug\pageadmin.dll
+E:\thuc hanh\pageadmin\pageadmin\obj\Debug\pageadmin.pdb
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\pageadmin.dll.config
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\pageadmin.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\pageadmin.pdb
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\csc.exe
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\csc.exe.config
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\csc.rsp
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\csi.exe
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\csi.exe.config
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\csi.rsp
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.Managed.Core.targets
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.AppContext.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Collections.Immutable.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Console.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Globalization.Calendars.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.IO.Compression.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.IO.FileSystem.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Net.Http.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Net.Sockets.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Reflection.Metadata.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.ValueTuple.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Xml.XmlDocument.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Xml.XPath.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\vbc.exe
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\vbc.exe.config
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\vbc.rsp
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\VBCSCompiler.exe
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\roslyn\VBCSCompiler.exe.config
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Antlr3.Runtime.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Web.Infrastructure.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Newtonsoft.Json.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Helpers.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Mvc.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Optimization.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Razor.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.WebPages.Deployment.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.WebPages.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.WebPages.Razor.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\WebGrease.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Helpers.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Mvc.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Optimization.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Razor.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.WebPages.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.WebPages.Deployment.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.WebPages.Razor.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Newtonsoft.Json.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Antlr3.Runtime.pdb
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.AssemblyReference.cache
+D:\fastfood\pageadmin\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.CoreCompileInputs.cache
+D:\fastfood\pageadmin\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.CopyComplete
+D:\fastfood\pageadmin\pageadmin\pageadmin\obj\Debug\pageadmin.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\obj\Debug\pageadmin.pdb
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\EntityFramework.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\EntityFramework.SqlServer.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\EntityFramework.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\EntityFramework.SqlServer.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Net.Http.Formatting.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Http.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Http.WebHost.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Net.Http.Formatting.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Http.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Web.Http.WebHost.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Bcl.HashCode.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Abstractions.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Memory.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Options.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Primitives.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Buffers.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Collections.Immutable.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.ComponentModel.Annotations.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Diagnostics.DiagnosticSource.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Memory.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Numerics.Vectors.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Threading.Tasks.Extensions.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Bcl.HashCode.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Abstractions.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Memory.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Options.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\Microsoft.Extensions.Primitives.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Buffers.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Collections.Immutable.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Diagnostics.DiagnosticSource.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Memory.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Numerics.Vectors.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\System.Threading.Tasks.Extensions.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\PagedList.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\PagedList.Mvc.dll
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\PagedList.xml
+D:\fastfood\pageadmin\pageadmin\pageadmin\bin\PagedList.Mvc.xml
+D:\pageadmin\pageadmin\bin\pageadmin.dll.config
+D:\pageadmin\pageadmin\bin\pageadmin.dll
+D:\pageadmin\pageadmin\bin\pageadmin.pdb
+D:\pageadmin\pageadmin\bin\roslyn\csc.exe
+D:\pageadmin\pageadmin\bin\roslyn\csc.exe.config
+D:\pageadmin\pageadmin\bin\roslyn\csc.rsp
+D:\pageadmin\pageadmin\bin\roslyn\csi.exe
+D:\pageadmin\pageadmin\bin\roslyn\csi.exe.config
+D:\pageadmin\pageadmin\bin\roslyn\csi.rsp
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.Managed.Core.targets
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\pageadmin\pageadmin\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.AppContext.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Collections.Immutable.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Console.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Globalization.Calendars.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.IO.Compression.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.IO.FileSystem.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Net.Http.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Net.Sockets.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Reflection.Metadata.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.ValueTuple.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Xml.XmlDocument.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Xml.XPath.dll
+D:\pageadmin\pageadmin\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\pageadmin\pageadmin\bin\roslyn\vbc.exe
+D:\pageadmin\pageadmin\bin\roslyn\vbc.exe.config
+D:\pageadmin\pageadmin\bin\roslyn\vbc.rsp
+D:\pageadmin\pageadmin\bin\roslyn\VBCSCompiler.exe
+D:\pageadmin\pageadmin\bin\roslyn\VBCSCompiler.exe.config
+D:\pageadmin\pageadmin\bin\Antlr3.Runtime.dll
+D:\pageadmin\pageadmin\bin\EntityFramework.dll
+D:\pageadmin\pageadmin\bin\EntityFramework.SqlServer.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Bcl.HashCode.dll
+D:\pageadmin\pageadmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Abstractions.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Memory.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Options.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Primitives.dll
+D:\pageadmin\pageadmin\bin\Microsoft.Web.Infrastructure.dll
+D:\pageadmin\pageadmin\bin\Newtonsoft.Json.dll
+D:\pageadmin\pageadmin\bin\PagedList.dll
+D:\pageadmin\pageadmin\bin\PagedList.Mvc.dll
+D:\pageadmin\pageadmin\bin\System.Buffers.dll
+D:\pageadmin\pageadmin\bin\System.Collections.Immutable.dll
+D:\pageadmin\pageadmin\bin\System.ComponentModel.Annotations.dll
+D:\pageadmin\pageadmin\bin\System.Diagnostics.DiagnosticSource.dll
+D:\pageadmin\pageadmin\bin\System.Memory.dll
+D:\pageadmin\pageadmin\bin\System.Net.Http.Formatting.dll
+D:\pageadmin\pageadmin\bin\System.Numerics.Vectors.dll
+D:\pageadmin\pageadmin\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\pageadmin\pageadmin\bin\System.Threading.Tasks.Extensions.dll
+D:\pageadmin\pageadmin\bin\System.Web.Helpers.dll
+D:\pageadmin\pageadmin\bin\System.Web.Http.dll
+D:\pageadmin\pageadmin\bin\System.Web.Http.WebHost.dll
+D:\pageadmin\pageadmin\bin\System.Web.Mvc.dll
+D:\pageadmin\pageadmin\bin\System.Web.Optimization.dll
+D:\pageadmin\pageadmin\bin\System.Web.Razor.dll
+D:\pageadmin\pageadmin\bin\System.Web.WebPages.Deployment.dll
+D:\pageadmin\pageadmin\bin\System.Web.WebPages.dll
+D:\pageadmin\pageadmin\bin\System.Web.WebPages.Razor.dll
+D:\pageadmin\pageadmin\bin\WebGrease.dll
+D:\pageadmin\pageadmin\bin\EntityFramework.xml
+D:\pageadmin\pageadmin\bin\EntityFramework.SqlServer.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Bcl.HashCode.xml
+D:\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.xml
+D:\pageadmin\pageadmin\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Abstractions.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Caching.Memory.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Options.xml
+D:\pageadmin\pageadmin\bin\Microsoft.Extensions.Primitives.xml
+D:\pageadmin\pageadmin\bin\PagedList.xml
+D:\pageadmin\pageadmin\bin\PagedList.Mvc.xml
+D:\pageadmin\pageadmin\bin\System.Buffers.xml
+D:\pageadmin\pageadmin\bin\System.Collections.Immutable.xml
+D:\pageadmin\pageadmin\bin\System.Diagnostics.DiagnosticSource.xml
+D:\pageadmin\pageadmin\bin\System.Memory.xml
+D:\pageadmin\pageadmin\bin\System.Net.Http.Formatting.xml
+D:\pageadmin\pageadmin\bin\System.Numerics.Vectors.xml
+D:\pageadmin\pageadmin\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\pageadmin\pageadmin\bin\System.Threading.Tasks.Extensions.xml
+D:\pageadmin\pageadmin\bin\System.Web.Http.xml
+D:\pageadmin\pageadmin\bin\System.Web.Http.WebHost.xml
+D:\pageadmin\pageadmin\bin\System.Web.Helpers.xml
+D:\pageadmin\pageadmin\bin\System.Web.Mvc.xml
+D:\pageadmin\pageadmin\bin\System.Web.Optimization.xml
+D:\pageadmin\pageadmin\bin\System.Web.Razor.xml
+D:\pageadmin\pageadmin\bin\System.Web.WebPages.xml
+D:\pageadmin\pageadmin\bin\System.Web.WebPages.Deployment.xml
+D:\pageadmin\pageadmin\bin\System.Web.WebPages.Razor.xml
+D:\pageadmin\pageadmin\bin\Newtonsoft.Json.xml
+D:\pageadmin\pageadmin\bin\Antlr3.Runtime.pdb
+D:\pageadmin\pageadmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.AssemblyReference.cache
+D:\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.CoreCompileInputs.cache
+D:\pageadmin\pageadmin\obj\Debug\pageadmin.csproj.CopyComplete
+D:\pageadmin\pageadmin\obj\Debug\pageadmin.dll
+D:\pageadmin\pageadmin\obj\Debug\pageadmin.pdb

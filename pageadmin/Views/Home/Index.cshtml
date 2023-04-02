@@ -1,0 +1,171 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>Chào mừng bạn đến với hệ thống <span>Fastfood_Service_2023</span></h1>
+                <h2>Bạn muốn ăn gì ngày hôm nay?</h2>
+
+                <div class="btns">
+                    <a href="#menu" class="btn-menu animated fadeInUp scrollto">Thực đơn</a>
+                    <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Liên hệ</a>
+                </div>
+            </div>
+            @* <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="glightbox play-btn"></a>
+                </div> *@
+
+        </div>
+    </div>
+</section><!-- End Hero -->
+
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="about-img">
+                        <img src="~/assests/img/about.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                    <h3>Đem đến những món ăn tuyệt vời nhất cho bạn là sứ mệnh của chúng tôi.</h3>
+                    <ul>
+                        <li><i class="bi bi-check-circle"></i> Các món ăn đều được sử dụng nguyên liệu tươi mới.</li>
+                        <li><i class="bi bi-check-circle"></i> Đảm bảo thức ăn ngon - bổ - rẻ.</li>
+                        <li><i class="bi bi-check-circle"></i> Đảm bảo vệ sinh an toàn thực phẩm.</li>
+                    </ul>
+                    <p>
+                        Chúng tôi sẽ đem đến cho bạn những món ăn ngon nhất cho bạn cùng với giá rẻ nhưng vẫn đảm bảo chất lượng.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Thực đơn</h2>
+                <p>Danh sách các món ăn</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="menu-flters">
+                        <li data-filter="*" class="filter-active">Tất cả</li>
+                        <li data-filter=".filter-starters">Khai vị</li>
+                        <li data-filter=".filter-salads">Hamburger</li>
+                        <li data-filter=".filter-specialty">Pizza</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="~/assests/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Lobster Bisque</a><span>$5.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem, deren, trataro, filede, nerada
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <img src="~/assests/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Bread Barrel</a><span>$6.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem, deren, trataro, filede, nerada
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="~/assests/img/menu/cake.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Crab Cake</a><span>$7.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="~/assests/img/menu/caesar.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Caesar Selections</a><span>$8.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem, deren, trataro, filede, nerada
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <img src="~/assests/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Tuscan Grilled</a><span>$9.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-starters">
+                    <img src="~/assests/img/menu/mozzarella.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Mozzarella Stick</a><span>$4.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem, deren, trataro, filede, nerada
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="~/assests/img/menu/greek-salad.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Greek Salad</a><span>$9.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-salads">
+                    <img src="~/assests/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Spinach Salad</a><span>$9.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
+                    <img src="~/assests/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Lobster Roll</a><span>$12.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Menu Section -->
+
