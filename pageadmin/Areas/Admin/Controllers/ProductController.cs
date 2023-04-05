@@ -19,7 +19,7 @@ namespace pageadmin.Areas.Admin.Controllers
 {
     public class ProductController : Controller
     {
-        FastfoodEntities3 data = new FastfoodEntities3();
+        FastfoodEntities5 data = new FastfoodEntities5();
         public ActionResult SanPham(int ?page, string search="")
         {
            

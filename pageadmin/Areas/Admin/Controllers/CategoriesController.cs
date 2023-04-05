@@ -13,7 +13,7 @@ namespace pageadmin.Areas.Admin.Controllers
 {
     public class CategoriesController : Controller
     {
-        FastfoodEntities3 categori = new FastfoodEntities3();
+        FastfoodEntities5 categori = new FastfoodEntities5();
         public ActionResult LOAISP(int ?page, string search="")
         {
             int pageNumber = (page ?? 1);

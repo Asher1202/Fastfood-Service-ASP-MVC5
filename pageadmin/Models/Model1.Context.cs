@@ -13,10 +13,10 @@ namespace pageadmin.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class FastfoodEntities3 : DbContext
+    public partial class FastfoodEntities5 : DbContext
     {
-        public FastfoodEntities3()
-            : base("name=FastfoodEntities3")
+        public FastfoodEntities5()
+            : base("name=FastfoodEntities5")
         {
         }
     
@@ -25,13 +25,17 @@ namespace pageadmin.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<Cart> Carts { get; set; }
         public virtual DbSet<Categorie> Categories { get; set; }
+        public virtual DbSet<Chucnang> Chucnangs { get; set; }
+        public virtual DbSet<Contact> Contacts { get; set; }
+        public virtual DbSet<Nhanvien> Nhanviens { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Payment> Payments { get; set; }
+        public virtual DbSet<Phanquyen> Phanquyens { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Contact> Contacts { get; set; }
     }
 }

@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="FastfoodModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="UserAdmin" />
+    </Key>
+    <Property Name="UserAdmin" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PassAdmin" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Hoten" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Carts">
     <Key>
       <PropertyRef Name="CartId" />
@@ -7,7 +15,9 @@
     <Property Name="CartId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ProductId" Type="int" />
     <Property Name="Quantity" Type="int" />
-    <Property Name="UserId" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="TotalPrice" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Categorie">
     <Key>
@@ -19,6 +29,14 @@
     <Property Name="ImageUrl" Type="nvarchar" MaxLength="255" />
     <Property Name="ISActive" Type="bit" />
   </EntityType>
+  <EntityType Name="Chucnang">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Tenchucnang" Type="nvarchar" MaxLength="50" />
+    <Property Name="Machucnang" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Contacts">
     <Key>
       <PropertyRef Name="ContactId" />
@@ -29,6 +47,19 @@
     <Property Name="Subject" Type="varchar" MaxLength="200" />
     <Property Name="Message" Type="varchar(max)" />
     <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Nhanvien">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="TenNhanVien" Type="nvarchar" MaxLength="50" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDloainhanvien" Type="int" />
   </EntityType>
   <EntityType Name="Orders">
     <Key>
@@ -54,6 +85,15 @@
     <Property Name="CvvNo" Type="int" />
     <Property Name="Address" Type="varchar(max)" />
     <Property Name="PaymentMode" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Phanquyen">
+    <Key>
+      <PropertyRef Name="IdNhanvien" />
+      <PropertyRef Name="IdChucnang" />
+    </Key>
+    <Property Name="IdNhanvien" Type="int" Nullable="false" />
+    <Property Name="IdChucnang" Type="int" Nullable="false" />
+    <Property Name="Ghichu" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Products">
     <Key>
@@ -91,11 +131,13 @@
     <Property Name="Address" Type="varchar(max)" />
     <Property Name="PostCode" Type="varchar" MaxLength="50" />
     <Property Name="Password" Type="varchar" MaxLength="50" />
-    <Property Name="ImageUrl" Type="nvarchar" MaxLength="255" />
-    <Property Name="CreatedDate" Type="date" />
+    <Property Name="ImageUrl" Type="varchar(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
   </EntityType>
-  <Association Name="FK__Carts__ProductId__412EB0B6">
-    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+  <Association Name="FK_Carts_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Carts" Type="Self.Carts" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Products">
@@ -106,20 +148,10 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Carts__UserId__4222D4EF">
-    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
-    <End Role="Carts" Type="Self.Carts" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Users">
-        <PropertyRef Name="UserId" />
-      </Principal>
-      <Dependent Role="Carts">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__Orders__PaymentI__48CFD27E">
-    <End Role="Payment" Type="Self.Payment" Multiplicity="0..1" />
+  <Association Name="FK_Orders_Payment">
+    <End Role="Payment" Type="Self.Payment" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Payment">
@@ -130,8 +162,10 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Orders__ProductI__46E78A0C">
-    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+  <Association Name="FK_Orders_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Products">
@@ -142,8 +176,10 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Orders__UserId__47DBAE45">
-    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+  <Association Name="FK_Orders_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Users">
@@ -154,8 +190,38 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Products__Catego__3E52440B">
-    <End Role="Categorie" Type="Self.Categorie" Multiplicity="0..1" />
+  <Association Name="FK_Phanquyen_Chucnang">
+    <End Role="Chucnang" Type="Self.Chucnang" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Phanquyen" Type="Self.Phanquyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Chucnang">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Phanquyen">
+        <PropertyRef Name="IdChucnang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phanquyen_Nhanvien">
+    <End Role="Nhanvien" Type="Self.Nhanvien" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Phanquyen" Type="Self.Phanquyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nhanvien">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Phanquyen">
+        <PropertyRef Name="IdNhanvien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Products_Categorie">
+    <End Role="Categorie" Type="Self.Categorie" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="Products" Type="Self.Products" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Categorie">
@@ -167,35 +233,43 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="FastfoodModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Carts" EntityType="Self.Carts" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Categorie" EntityType="Self.Categorie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Chucnang" EntityType="Self.Chucnang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Contacts" EntityType="Self.Contacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nhanvien" EntityType="Self.Nhanvien" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Payment" EntityType="Self.Payment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Phanquyen" EntityType="Self.Phanquyen" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__Carts__ProductId__412EB0B6" Association="Self.FK__Carts__ProductId__412EB0B6">
+    <AssociationSet Name="FK_Carts_Products" Association="Self.FK_Carts_Products">
       <End Role="Products" EntitySet="Products" />
       <End Role="Carts" EntitySet="Carts" />
     </AssociationSet>
-    <AssociationSet Name="FK__Carts__UserId__4222D4EF" Association="Self.FK__Carts__UserId__4222D4EF">
-      <End Role="Users" EntitySet="Users" />
-      <End Role="Carts" EntitySet="Carts" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Orders__PaymentI__48CFD27E" Association="Self.FK__Orders__PaymentI__48CFD27E">
+    <AssociationSet Name="FK_Orders_Payment" Association="Self.FK_Orders_Payment">
       <End Role="Payment" EntitySet="Payment" />
       <End Role="Orders" EntitySet="Orders" />
     </AssociationSet>
-    <AssociationSet Name="FK__Orders__ProductI__46E78A0C" Association="Self.FK__Orders__ProductI__46E78A0C">
+    <AssociationSet Name="FK_Orders_Products" Association="Self.FK_Orders_Products">
       <End Role="Products" EntitySet="Products" />
       <End Role="Orders" EntitySet="Orders" />
     </AssociationSet>
-    <AssociationSet Name="FK__Orders__UserId__47DBAE45" Association="Self.FK__Orders__UserId__47DBAE45">
+    <AssociationSet Name="FK_Orders_Users" Association="Self.FK_Orders_Users">
       <End Role="Users" EntitySet="Users" />
       <End Role="Orders" EntitySet="Orders" />
     </AssociationSet>
-    <AssociationSet Name="FK__Products__Catego__3E52440B" Association="Self.FK__Products__Catego__3E52440B">
+    <AssociationSet Name="FK_Phanquyen_Chucnang" Association="Self.FK_Phanquyen_Chucnang">
+      <End Role="Chucnang" EntitySet="Chucnang" />
+      <End Role="Phanquyen" EntitySet="Phanquyen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phanquyen_Nhanvien" Association="Self.FK_Phanquyen_Nhanvien">
+      <End Role="Nhanvien" EntitySet="Nhanvien" />
+      <End Role="Phanquyen" EntitySet="Phanquyen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Products_Categorie" Association="Self.FK_Products_Categorie">
       <End Role="Categorie" EntitySet="Categorie" />
       <End Role="Products" EntitySet="Products" />
     </AssociationSet>

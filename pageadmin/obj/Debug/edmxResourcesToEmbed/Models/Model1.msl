@@ -1,13 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="FastfoodModelStoreContainer" CdmEntityContainer="FastfoodEntities3">
+  <EntityContainerMapping StorageEntityContainer="FastfoodModelStoreContainer" CdmEntityContainer="FastfoodEntities5">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="FastfoodModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="UserAdmin" ColumnName="UserAdmin" />
+          <ScalarProperty Name="PassAdmin" ColumnName="PassAdmin" />
+          <ScalarProperty Name="Hoten" ColumnName="Hoten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Carts">
       <EntityTypeMapping TypeName="FastfoodModel.Cart">
         <MappingFragment StoreEntitySet="Carts">
           <ScalarProperty Name="CartId" ColumnName="CartId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="TotalPrice" ColumnName="TotalPrice" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -19,6 +30,41 @@
           <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
           <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
           <ScalarProperty Name="ISActive" ColumnName="ISActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Chucnangs">
+      <EntityTypeMapping TypeName="FastfoodModel.Chucnang">
+        <MappingFragment StoreEntitySet="Chucnang">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Tenchucnang" ColumnName="Tenchucnang" />
+          <ScalarProperty Name="Machucnang" ColumnName="Machucnang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="FastfoodModel.Contact">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nhanviens">
+      <EntityTypeMapping TypeName="FastfoodModel.Nhanvien">
+        <MappingFragment StoreEntitySet="Nhanvien">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="TenNhanVien" ColumnName="TenNhanVien" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="IDloainhanvien" ColumnName="IDloainhanvien" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -46,6 +92,15 @@
           <ScalarProperty Name="CvvNo" ColumnName="CvvNo" />
           <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phanquyens">
+      <EntityTypeMapping TypeName="FastfoodModel.Phanquyen">
+        <MappingFragment StoreEntitySet="Phanquyen">
+          <ScalarProperty Name="IdNhanvien" ColumnName="IdNhanvien" />
+          <ScalarProperty Name="IdChucnang" ColumnName="IdChucnang" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -88,18 +143,6 @@
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
           <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Contacts">
-      <EntityTypeMapping TypeName="FastfoodModel.Contact">
-        <MappingFragment StoreEntitySet="Contacts">
-          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
-          <ScalarProperty Name="Message" ColumnName="Message" />
-          <ScalarProperty Name="Subject" ColumnName="Subject" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="ContactId" ColumnName="ContactId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

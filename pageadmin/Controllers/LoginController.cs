@@ -8,7 +8,7 @@ namespace pageadmin.Controllers
 {
     public class LoginController : Controller
     {
-        FastfoodEntities3 _db = new FastfoodEntities3();
+        FastfoodEntities5 _db = new FastfoodEntities5();
         // GET: Login
         public ActionResult DangNhap()
         {
@@ -20,7 +20,7 @@ namespace pageadmin.Controllers
             var check = _db.Users.Where(s => s.Email.Equals(_user.Email) && s.Password.Equals(_user.Password)).FirstOrDefault();
             if(check == null)
             {
-                _user.LoginErrorMessage = "Email hoặc username hoặc mật khẩu sai";
+                _user.Email = "Email hoặc username hoặc mật khẩu sai";
                 return View("DangNhap", _user);
             }
             else

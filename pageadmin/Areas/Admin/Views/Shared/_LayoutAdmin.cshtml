@@ -112,8 +112,8 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i>
                         @{
-                            var user = HttpContext.Current.Session["user"].ToString();
-                            <span>@user</span>
+                            var user = (pageadmin.Models.Nhanvien)HttpContext.Current.Session["user"];
+                            <span>@user.TenNhanVien</span>
                         }
                         <b class="caret"></b>
                     </a>
@@ -150,20 +150,25 @@
                         <li>
                         </li>
                         <li>
-                            <a href="~/Admin/Categories/LOAISP"><i class="fa fa-bar-chart-o fa-fw"></i> Categories</a>
-                            @*<ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="flot.html">Flot Charts</a>
-                                    </li>
-                                    <li>
-                                        <a href="morris.html">Morris.js Charts</a>
-                                    </li>
-                                </ul>*@
+                            <a href="~/Admin/Nhanvien/Phanloai"><i class="fa fa-bar-chart-o fa-fw"></i>Phân loại</a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="~/Admin/Categories/LOAISP"><i class="fa fa-bar-chart-o fa-fw"></i> Categories</a>
+                                    <a href="~/Admin/Nhanvien/Phanloai"><i class="fa fa-bar-chart-o fa-fw"></i>Phân loại</a>
+                                </li>
+                                    
+                                </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="~/Admin/Product/SanPham"><i class = "fa fa-table fa-fw"></i>Product</a>
+                            <a href="~/Admin/Nhanvien/Sanpham"><i class="fa fa-table fa-fw"></i>Sản Phẩm</a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="~/Admin/Product/SanPham"><i class="fa fa-table fa-fw"></i>Product</a>
+                                    <a href="~/Admin/Nhanvien/Sanpham"><i class="fa fa-table fa-fw"></i>Sản Phẩm</a>
+                                </li>
 
+                            </ul>
                         </li>
                         <li>
                         </li>

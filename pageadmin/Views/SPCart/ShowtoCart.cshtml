@@ -1,0 +1,111 @@
+﻿@model pageadmin.Models.CartSP
+
+@{
+    ViewBag.Title = "ShowtoCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ShowtoCart</h2>
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>TotalPrice</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                double total = Convert.ToDouble(item.Cart_Product.Price.Value * item.Cart_Quantity);
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.Cart_Product.Name)
+                    </td>
+                    <td>
+                        <img style="width:50px;height:50px" src="@Url.Content("~/tailieu/" + item.ImageUrl)" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Cart_Product.Price)
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("update_quantity_product", "SPCart"))
+                        {
+                            <input type="hidden" value="@item.Cart_Product.ProductId" name="id_ProductId" />
+                            <input type="number" value="@item.Cart_Quantity" name="Quantity" />
+                            <input type="submit" value="Update_Quantity" />
+
+                        }
+                    </td>
+                    <td>
+                        Total:@total
+                    </td>
+                    <td>
+                        <a href="/SPCart/RemoveCartProduct/@item.Cart_Product.ProductId">Remove</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="text-align:right; color:purple">
+                    Tổng: @Model.TotalMoney()
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <div id="smart-button-container">
+        <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
+        </div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=ARJkNJXYRW-E7RqFlBBt5kocPGAZkzcPb-h_GSNuLJLXec_W3DJdQq5zNUnDuNsaNJa1gN9T2Do4O82a" data-sdk-integration-source="button-factory"></script>
+    <script>
+        function initPayPalButton() {
+            paypal.Buttons({
+               
+                style: {
+                    shape: 'rect',
+                    color: 'gold',
+                    layout: 'vertical',
+                    label: 'paypal',
+
+                },
+                // default is "GET_FROM_FILE"
+               //button cua paypal á
+                createOrder: function (data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{ "amount": { "currency_code": "USD", "value": @Model.TotalMoney() } }]
+                    });
+                },
+
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (orderData) {
+
+                        // Full available details
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                        // Show a success message within this page, e.g.
+                        const element = document.getElementById('paypal-button-container');
+                        element.innerHTML = '';
+                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+                        // Or go to another URL:  actions.redirect('thank_you.html');
+
+                    });
+                },
+
+                onError: function (err) {
+                    console.log(err);
+                }
+            }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+    </script>
+    <a href="@Url.Action("Product","SanPham")">Tiếp Tục Mua Sắm</a>
+}

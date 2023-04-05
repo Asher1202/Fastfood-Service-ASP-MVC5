@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pageadmin.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -33,9 +34,14 @@ namespace pageadmin.Areas.Admin.Controllers
         {
 
 
-            if (user.ToLower() == "admin" && password == "123")
+            FastfoodEntities5 db = new FastfoodEntities5();
+            var nhanvien = db.Nhanviens.SingleOrDefault(m => m.Username.ToLower() == user.ToLower() && m.Password == password);
+
+
+            if (nhanvien != null)
             {
-                Session["user"] = "admin";
+                Session["user"] = nhanvien;
+
                 return RedirectToAction("Index");
             }
             else

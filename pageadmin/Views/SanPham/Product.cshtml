@@ -1,0 +1,44 @@
+﻿@model IEnumerable<pageadmin.Models.Product>
+
+@{
+    ViewBag.Title = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Sản Phẩm</h2>
+@using (Html.BeginForm("Product", "SanPham", FormMethod.Get))
+{
+    <p>
+        Tìm kiếm sản phẩm: @Html.TextBox("search", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Tìm kiếm" />
+    </p>
+
+}
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="col-sm-6 col-md-4 col-lg-3" id="margin-card">
+            <div class="card">
+                <div style="background-color:purple">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </div>
+                <div>
+                    <img style="width:200pxpx;height:200px;" src="@Url.Content("~/tailieu/" + item.ImageUrl)" />
+                </div>
+                <div style="background-color:purple">
+                    @Html.DisplayFor(modelItem => item.Price)
+                </div>
+                <a href="/SPCart/AddToCart/@item.ProductId">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081840.png" style="width:50px;" />
+                </a>
+
+            </div>
+
+
+        </div>
+
+    }
+
+</table>
+<a href="@Url.Action("Index","Home")">Quay lại Trang Chủ</a>

@@ -11,8 +11,7 @@ namespace pageadmin.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Product
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,20 +22,13 @@ namespace pageadmin.Models
         }
     
         public int ProductId { get; set; }
-        [Required(ErrorMessage = "Vui long nhap ten san pham.")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Vui long nhap mo ta san pham.")]
         public string Description { get; set; }
-        [Required(ErrorMessage = "Vui long nhap gia san pham.")]
         public Nullable<decimal> Price { get; set; }
-        [Required(ErrorMessage = "Vui long nhap so luong san pham.")]
         public Nullable<int> Quantity { get; set; }
         public string ImageUrl { get; set; }
-        [Required(ErrorMessage = "Vui long nhap so loai")]
         public Nullable<int> CategoryId { get; set; }
-        [Required(ErrorMessage = "Vui long nhap tinh trang san pham")]
         public Nullable<bool> IsActive { get; set; }
-        [Required(ErrorMessage = "Vui long nhap ngay tao san pham")]
         public Nullable<System.DateTime> CreatedDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -44,6 +36,5 @@ namespace pageadmin.Models
         public virtual Categorie Categorie { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }
-       
     }
 }
