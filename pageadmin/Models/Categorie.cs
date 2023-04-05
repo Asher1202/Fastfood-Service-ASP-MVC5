@@ -11,8 +11,7 @@ namespace pageadmin.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Categorie
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,12 +21,9 @@ namespace pageadmin.Models
         }
     
         public int CategoryId { get; set; }
-        [Required(ErrorMessage = "Vui long nhap ten loai san pham.")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Vui long nhap ngay tao loai san pham.")]
         public Nullable<System.DateTime> CreatedDate { get; set; }
         public string ImageUrl { get; set; }
-        [Required(ErrorMessage = "Vui long nhap tinh trang loai san pham.")]
         public Nullable<bool> ISActive { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -7,7 +7,9 @@
     <Property Name="CartId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ProductId" Type="int" />
     <Property Name="Quantity" Type="int" />
-    <Property Name="UserId" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="TotalPrice" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Categorie">
     <Key>
@@ -106,18 +108,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Carts__UserId__4222D4EF">
-    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
-    <End Role="Carts" Type="Self.Carts" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Users">
-        <PropertyRef Name="UserId" />
-      </Principal>
-      <Dependent Role="Carts">
-        <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__Orders__PaymentI__48CFD27E">
     <End Role="Payment" Type="Self.Payment" Multiplicity="0..1" />
     <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
@@ -177,10 +167,6 @@
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK__Carts__ProductId__412EB0B6" Association="Self.FK__Carts__ProductId__412EB0B6">
       <End Role="Products" EntitySet="Products" />
-      <End Role="Carts" EntitySet="Carts" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Carts__UserId__4222D4EF" Association="Self.FK__Carts__UserId__4222D4EF">
-      <End Role="Users" EntitySet="Users" />
       <End Role="Carts" EntitySet="Carts" />
     </AssociationSet>
     <AssociationSet Name="FK__Orders__PaymentI__48CFD27E" Association="Self.FK__Orders__PaymentI__48CFD27E">

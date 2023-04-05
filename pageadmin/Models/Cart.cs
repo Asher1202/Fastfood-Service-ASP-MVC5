@@ -11,15 +11,64 @@ namespace pageadmin.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Linq;
+
     public partial class Cart
     {
         public int CartId { get; set; }
         public Nullable<int> ProductId { get; set; }
         public Nullable<int> Quantity { get; set; }
-        public Nullable<int> UserId { get; set; }
+        public Nullable<decimal> Price { get; set; }
+        public Nullable<decimal> TotalPrice { get; set; }
+
+        public string ImageUrl { get; set; }
+        public string ProductName { get; set; }
     
         public virtual Product Product { get; set; }
-        public virtual User User { get; set; }
+
+        public Product Cart_Product { get; set; }
+
+        public int Cart_Quantity { get; set; }
+    }
+    public class CartSP
+    {
+        List<Cart> items = new List<Cart>();
+        public IEnumerable<Cart> Items
+        {
+            get {return items;}
+        }
+        public void Add(Product pro, int quantity = 1)
+        {
+            var item = items.FirstOrDefault(s => s.Cart_Product.ProductId == pro.ProductId);
+            if(item == null)
+            {
+                items.Add(new Cart
+                {
+                    Cart_Product = pro,
+                    Cart_Quantity = quantity
+                });
+               
+            }else
+            {
+                item.Cart_Quantity += quantity;
+            }
+        }
+        public void update_quantity(int id, int quantity)
+        {
+            var item = items.Find(s => s.Cart_Product.ProductId == id);
+            if(item != null)
+            {
+                item.Cart_Quantity = quantity;
+            }
+        }
+        public double TotalMoney()
+        {
+            var total = items.Sum(s => s.Cart_Product.Price * s.Cart_Quantity);
+            return(double) total;
+        }
+        public void Remove_Cart(int id)
+        {
+            items.RemoveAll(s => s.Cart_Product.ProductId == id);
+        }
     }
 }

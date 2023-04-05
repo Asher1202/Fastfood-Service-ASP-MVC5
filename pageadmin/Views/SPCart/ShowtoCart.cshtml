@@ -1,0 +1,62 @@
+﻿@model pageadmin.Models.CartSP
+
+@{
+    ViewBag.Title = "ShowtoCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ShowtoCart</h2>
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>TotalPrice</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model.Items)
+            {
+                double total =Convert.ToDouble( item.Cart_Product.Price.Value * item.Cart_Quantity);
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => item.Cart_Product.Name)
+                    </td>
+                    <td>
+                        <img style="width:50px;height:50px" src="@Url.Content("~/tailieu/" + item.ImageUrl)" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => item.Cart_Product.Price)
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("update_quantity_product", "SPCart"))
+                        {
+                            <input type="hidden" value="@item.Cart_Product.ProductId" name="id_ProductId"/>
+                            <input type="number" value="@item.Cart_Quantity" name="Quantity"/>
+                            <input type="submit" value="Update_Quantity" />
+
+                        }
+                    </td>
+                    <td>
+                        Total:@total
+                    </td>
+                    <td>
+                        <a href="/SPCart/RemoveCartProduct/@item.Cart_Product.ProductId">Remove</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="text-align:right; color:purple">Tổng: @Model.TotalMoney()
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <a href="@Url.Action("Product","SanPham")">Tiếp Tục Mua Sắm</a>
+}
