@@ -9,6 +9,7 @@ namespace pageadmin.Areas.Admin.Controllers
     public class BaoloiController : Controller
     {
         // GET: Admin/Baoloi
+        //
         public ActionResult Khongcoquyen()
         {
             return View();
