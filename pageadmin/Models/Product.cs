@@ -18,7 +18,7 @@ namespace pageadmin.Models
         public Product()
         {
             this.Carts = new HashSet<Cart>();
-            this.Orders = new HashSet<Order>();
+            this.OrdersDetails = new HashSet<OrdersDetail>();
         }
     
         public int ProductId { get; set; }
@@ -35,6 +35,6 @@ namespace pageadmin.Models
         public virtual ICollection<Cart> Carts { get; set; }
         public virtual Categorie Categorie { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<OrdersDetail> OrdersDetails { get; set; }
     }
 }

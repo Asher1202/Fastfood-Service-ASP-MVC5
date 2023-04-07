@@ -9,8 +9,9 @@
     <Property Name="Quantity" Type="Int32" />
     <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
     <Property Name="TotalPrice" Type="Decimal" Precision="18" Scale="0" />
-    <NavigationProperty Name="Product" Relationship="Self.FK__Carts__ProductId__412EB0B6" FromRole="Carts" ToRole="Products" />
     <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ImageUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Carts__ProductId__3F466844" FromRole="Carts" ToRole="Products" />
   </EntityType>
   <EntityType Name="Categorie">
     <Key>
@@ -21,47 +22,32 @@
     <Property Name="CreatedDate" Type="DateTime" Precision="0" />
     <Property Name="ImageUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="ISActive" Type="Boolean" />
-    <NavigationProperty Name="Products" Relationship="Self.FK__Products__Catego__3E52440B" FromRole="Categorie" ToRole="Products" />
-  </EntityType>
-  <EntityType Name="Contact">
-    <Key>
-      <PropertyRef Name="ContactId" />
-    </Key>
-    <Property Name="ContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="Subject" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Products__Catego__3C69FB99" FromRole="Categorie" ToRole="Products" />
   </EntityType>
   <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="OrdersDetails" Relationship="Self.FK__OrdersDet__Order__46E78A0C" FromRole="Orders" ToRole="OrdersDetails" />
+  </EntityType>
+  <EntityType Name="OrdersDetail">
     <Key>
       <PropertyRef Name="OrderDetailsId" />
     </Key>
     <Property Name="OrderDetailsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="OrderNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <Property Name="ProductId" Type="Int32" />
     <Property Name="Quantity" Type="Int32" />
     <Property Name="UserId" Type="Int32" />
-    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="PaymentId" Type="Int32" />
+    <Property Name="OrderId" Type="Int32" />
     <Property Name="OrderDate" Type="DateTime" Precision="3" />
-    <NavigationProperty Name="Payment" Relationship="Self.FK__Orders__PaymentI__48CFD27E" FromRole="Orders" ToRole="Payment" />
-    <NavigationProperty Name="Product" Relationship="Self.FK__Orders__ProductI__46E78A0C" FromRole="Orders" ToRole="Products" />
-    <NavigationProperty Name="User" Relationship="Self.FK__Orders__UserId__47DBAE45" FromRole="Orders" ToRole="Users" />
-  </EntityType>
-  <EntityType Name="Payment">
-    <Key>
-      <PropertyRef Name="PaymentId" />
-    </Key>
-    <Property Name="PaymentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="CardNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="ExpiryDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="CvvNo" Type="Int32" />
-    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="PaymentMode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__PaymentI__48CFD27E" FromRole="Payment" ToRole="Orders" />
+    <NavigationProperty Name="Order" Relationship="Self.FK__OrdersDet__Order__46E78A0C" FromRole="OrdersDetails" ToRole="Orders" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__OrdersDet__Produ__44FF419A" FromRole="OrdersDetails" ToRole="Products" />
+    <NavigationProperty Name="User" Relationship="Self.FK__OrdersDet__UserI__45F365D3" FromRole="OrdersDetails" ToRole="Users" />
   </EntityType>
   <EntityType Name="Product">
     <Key>
@@ -76,9 +62,9 @@
     <Property Name="CategoryId" Type="Int32" />
     <Property Name="IsActive" Type="Boolean" />
     <Property Name="CreatedDate" Type="DateTime" Precision="0" />
-    <NavigationProperty Name="Carts" Relationship="Self.FK__Carts__ProductId__412EB0B6" FromRole="Products" ToRole="Carts" />
-    <NavigationProperty Name="Categorie" Relationship="Self.FK__Products__Catego__3E52440B" FromRole="Products" ToRole="Categorie" />
-    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__ProductI__46E78A0C" FromRole="Products" ToRole="Orders" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK__Carts__ProductId__3F466844" FromRole="Products" ToRole="Carts" />
+    <NavigationProperty Name="Categorie" Relationship="Self.FK__Products__Catego__3C69FB99" FromRole="Products" ToRole="Categorie" />
+    <NavigationProperty Name="OrdersDetails" Relationship="Self.FK__OrdersDet__Produ__44FF419A" FromRole="Products" ToRole="OrdersDetails" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -104,9 +90,9 @@
     <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="ImageUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="CreatedDate" Type="DateTime" Precision="0" />
-    <NavigationProperty Name="Orders" Relationship="Self.FK__Orders__UserId__47DBAE45" FromRole="Users" ToRole="Orders" />
+    <NavigationProperty Name="OrdersDetails" Relationship="Self.FK__OrdersDet__UserI__45F365D3" FromRole="Users" ToRole="OrdersDetails" />
   </EntityType>
-  <Association Name="FK__Carts__ProductId__412EB0B6">
+  <Association Name="FK__Carts__ProductId__3F466844">
     <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
     <End Role="Carts" Type="Self.Cart" Multiplicity="*" />
     <ReferentialConstraint>
@@ -118,7 +104,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Products__Catego__3E52440B">
+  <Association Name="FK__Products__Catego__3C69FB99">
     <End Role="Categorie" Type="Self.Categorie" Multiplicity="0..1" />
     <End Role="Products" Type="Self.Product" Multiplicity="*" />
     <ReferentialConstraint>
@@ -130,38 +116,38 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Orders__PaymentI__48CFD27E">
-    <End Role="Payment" Type="Self.Payment" Multiplicity="0..1" />
-    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+  <Association Name="FK__OrdersDet__Order__46E78A0C">
+    <End Role="Orders" Type="Self.Order" Multiplicity="0..1" />
+    <End Role="OrdersDetails" Type="Self.OrdersDetail" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Payment">
-        <PropertyRef Name="PaymentId" />
+      <Principal Role="Orders">
+        <PropertyRef Name="OrderId" />
       </Principal>
-      <Dependent Role="Orders">
-        <PropertyRef Name="PaymentId" />
+      <Dependent Role="OrdersDetails">
+        <PropertyRef Name="OrderId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Orders__ProductI__46E78A0C">
+  <Association Name="FK__OrdersDet__Produ__44FF419A">
     <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
-    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <End Role="OrdersDetails" Type="Self.OrdersDetail" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Products">
         <PropertyRef Name="ProductId" />
       </Principal>
-      <Dependent Role="Orders">
+      <Dependent Role="OrdersDetails">
         <PropertyRef Name="ProductId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Orders__UserId__47DBAE45">
+  <Association Name="FK__OrdersDet__UserI__45F365D3">
     <End Role="Users" Type="Self.User" Multiplicity="0..1" />
-    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <End Role="OrdersDetails" Type="Self.OrdersDetail" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Users">
         <PropertyRef Name="UserId" />
       </Principal>
-      <Dependent Role="Orders">
+      <Dependent Role="OrdersDetails">
         <PropertyRef Name="UserId" />
       </Dependent>
     </ReferentialConstraint>
@@ -169,31 +155,30 @@
   <EntityContainer Name="FastfoodEntities3" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Carts" EntityType="Self.Cart" />
     <EntitySet Name="Categories" EntityType="Self.Categorie" />
-    <EntitySet Name="Contacts" EntityType="Self.Contact" />
     <EntitySet Name="Orders" EntityType="Self.Order" />
-    <EntitySet Name="Payments" EntityType="Self.Payment" />
+    <EntitySet Name="OrdersDetails" EntityType="Self.OrdersDetail" />
     <EntitySet Name="Products" EntityType="Self.Product" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="Users" EntityType="Self.User" />
-    <AssociationSet Name="FK__Carts__ProductId__412EB0B6" Association="Self.FK__Carts__ProductId__412EB0B6">
+    <AssociationSet Name="FK__Carts__ProductId__3F466844" Association="Self.FK__Carts__ProductId__3F466844">
       <End Role="Products" EntitySet="Products" />
       <End Role="Carts" EntitySet="Carts" />
     </AssociationSet>
-    <AssociationSet Name="FK__Products__Catego__3E52440B" Association="Self.FK__Products__Catego__3E52440B">
+    <AssociationSet Name="FK__Products__Catego__3C69FB99" Association="Self.FK__Products__Catego__3C69FB99">
       <End Role="Categorie" EntitySet="Categories" />
       <End Role="Products" EntitySet="Products" />
     </AssociationSet>
-    <AssociationSet Name="FK__Orders__PaymentI__48CFD27E" Association="Self.FK__Orders__PaymentI__48CFD27E">
-      <End Role="Payment" EntitySet="Payments" />
+    <AssociationSet Name="FK__OrdersDet__Order__46E78A0C" Association="Self.FK__OrdersDet__Order__46E78A0C">
       <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrdersDetails" EntitySet="OrdersDetails" />
     </AssociationSet>
-    <AssociationSet Name="FK__Orders__ProductI__46E78A0C" Association="Self.FK__Orders__ProductI__46E78A0C">
+    <AssociationSet Name="FK__OrdersDet__Produ__44FF419A" Association="Self.FK__OrdersDet__Produ__44FF419A">
       <End Role="Products" EntitySet="Products" />
-      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrdersDetails" EntitySet="OrdersDetails" />
     </AssociationSet>
-    <AssociationSet Name="FK__Orders__UserId__47DBAE45" Association="Self.FK__Orders__UserId__47DBAE45">
+    <AssociationSet Name="FK__OrdersDet__UserI__45F365D3" Association="Self.FK__OrdersDet__UserI__45F365D3">
       <End Role="Users" EntitySet="Users" />
-      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrdersDetails" EntitySet="OrdersDetails" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

@@ -1,5 +1,6 @@
-﻿@model IEnumerable<pageadmin.Models.Product>
-
+﻿@using pageadmin.Models
+@using PagedList.Mvc;
+@model PagedList.PagedList<pageadmin.Models.Product>
 @{
     ViewBag.Title = "Product";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -41,4 +42,19 @@
     }
 
 </table>
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount;
+<div class="MenuTrang">
+
+    @Html.PagedListPager(Model, page => Url.Action("Product", new { page = page }))
+</div>
+<style>
+    .MenuTrang li {
+        display: inline;
+        border-radius: 50px;
+        background: #87CEEB;
+        padding: 20px;
+        width: 50px;
+        height: 50px;
+    }
+</style>
 <a href="@Url.Action("Index","Home")">Quay lại Trang Chủ</a>

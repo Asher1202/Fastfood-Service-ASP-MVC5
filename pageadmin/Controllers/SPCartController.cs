@@ -51,6 +51,16 @@ namespace pageadmin.Controllers
             cart.Remove_Cart(id);
             return RedirectToAction("ShowtoCart", "SPCart");
         }
+        //public PartialViewResult BigCart()
+        //{
+        //    int total = 0;
+        //    CartSP cart = Session["CartSP"] as CartSP;
+        //    if(cart != null)
+        //     total = cart.Total_Quantity_Cart();
+        //     ViewBag.Cart_Quantity = total;
+        //     return PartialView("BigCart");
+            
+        //}
         
     }
 }

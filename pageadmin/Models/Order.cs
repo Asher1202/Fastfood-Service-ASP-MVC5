@@ -14,17 +14,19 @@ namespace pageadmin.Models
     
     public partial class Order
     {
-        public int OrderDetailsId { get; set; }
-        public string OrderNo { get; set; }
-        public Nullable<int> ProductId { get; set; }
-        public Nullable<int> Quantity { get; set; }
-        public Nullable<int> UserId { get; set; }
-        public string Status { get; set; }
-        public Nullable<int> PaymentId { get; set; }
-        public Nullable<System.DateTime> OrderDate { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Order()
+        {
+            this.OrdersDetails = new HashSet<OrdersDetail>();
+        }
     
-        public virtual Payment Payment { get; set; }
-        public virtual Product Product { get; set; }
-        public virtual User User { get; set; }
+        public int OrderId { get; set; }
+        public string Name { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
+        public string Address { get; set; }
+        public string PostCode { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrdersDetail> OrdersDetails { get; set; }
     }
 }
